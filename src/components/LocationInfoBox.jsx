@@ -13,5 +13,3 @@ const LocationInfoBox = ({ info }) => {
 
 export default LocationInfoBox;
 
-// note to self: currently the info box does not appear and popup is the only 
-// thing displaying any value need to fix
