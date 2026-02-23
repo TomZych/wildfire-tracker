@@ -1,12 +1,32 @@
-# React + Vite
+# Wildfire Tracker
+A React web application that visualizes real-time wildfire data from NASA's EONET API on an interactive world map.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project fetches live natural event data from NASA's Earth Observatory Natural Event Tracker (EONET) API and displays active wildfires on an interactive map. I built it to learn React hooks, API integration, and working with mapping libraries. The app filters events by category ID 8 (wildfires), plots them as fire markers on an OpenStreetMap base layer using Leaflet, and displays event details in an info box when a marker is clicked.
 
-Currently, two official plugins are available:
+## Features
+- **Real-Time Data** – Fetches current wildfire events from NASA's EONET API 
+- **Interactive Map** – Built with React-Leaflet and OpenStreetMap tiles for smooth panning and zooming
+- **Fire Markers** – Custom fire alert icons mark each wildfire location using coordinates from the API
+- **Click for Details** – Clicking a marker displays an info box showing the event ID and title
+- **Loading State** – Shows a loading screen while fetching data from the API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js (with Hooks: useState, useEffect)
+- React-Leaflet
+- Leaflet
+- OpenStreetMap
+- NASA EONET API
+- CSS
 
-## Expanding the ESLint configuration
+## How to Run
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I Learned
+This project taught me how to use React hooks for state management and side effects, integrate third-party APIs, work with the React-Leaflet mapping library, and handle asynchronous data fetching with loading states.
+
+## Screenshot
+![Wildfire Tracker Screenshot](screenshot.png)
