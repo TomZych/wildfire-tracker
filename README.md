@@ -29,4 +29,4 @@ npm run dev
 This project taught me how to use React hooks for state management and side effects, integrate third-party APIs, work with the React-Leaflet mapping library, and handle asynchronous data fetching with loading states.
 
 ## Screenshot
-![Wildfire Tracker Screenshot](screenshot.png)
+![Wildfire Tracker Screenshot](wildfirescreenshot.png)
