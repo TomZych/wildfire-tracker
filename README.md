@@ -4,6 +4,8 @@ A React web application that visualizes real-time wildfire data from NASA's EONE
 ## Overview
 This project fetches live natural event data from NASA's Earth Observatory Natural Event Tracker (EONET) API and displays active wildfires on an interactive map. I built it to learn React hooks, API integration, and working with mapping libraries. The app filters events by category ID 8 (wildfires), plots them as fire markers on an OpenStreetMap base layer using Leaflet, and displays event details in an info box when a marker is clicked.
 
+Along the way I ran into some bugs around asynchronous data fetching due to the handling of empty state render before the API call resolved. I fixed this by adding loading flag tied to useEffect.
+
 ## Features
 - **Real-Time Data** – Fetches current wildfire events from NASA's EONET API 
 - **Interactive Map** – Built with React-Leaflet and OpenStreetMap tiles for smooth panning and zooming
